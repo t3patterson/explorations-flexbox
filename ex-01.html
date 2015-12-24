@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .flex-container{
+      outline: 7px solid palegoldenrod;
+      margin-bottom: 100px;
+      height: 20vh;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <h1>Ex-01: <code>display: flex</code></h1>
+  <pre id="html-code">
+  <h3>HTML</h3>
+  <code>
+  &lt;div&gt; class="flex-container"&lt;/div&gt;
+    &lt;div&gt; class="box box1">1 &lt;/div&gt;
+    &lt;div&gt; class="box box2">2 &lt;/div&gt;
+    &lt;div&gt; class="box box3">3 &lt;/div&gt;
+    &lt;div&gt; class="box box4">4 &lt;/div&gt;
+    &lt;div&gt; class="box box5">5 &lt;/div&gt;
+    &lt;div&gt; class="box box6">6 &lt;/div&gt;
+    &lt;div&gt; class="box box7">7 &lt;/div&gt;
+    &lt;div&gt; class="box box8">8 &lt;/div&gt;
+    &lt;div&gt; class="box box9">9 &lt;/div&gt;
+    &lt;div&gt; class="box box10">10 &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+  </pre>
+  
+  <!-- display: flex -->
+  <h3>display-flex</h3>
+
+  <pre><code>
+    .flex-container { display: flex }
+  </code></pre>
+  <style>.flex-container.ex1 {display: flex;} </style>
+  <div class="flex-container ex1">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+    <div class="box10">10</div>
+  </div>
+  
+  <!-- display: inline-flex -->
+  
+  <h3>display: inline-flex</h3>
+
+  <pre><code>
+    .flex-container { display: inline-flex }
+  </code></pre>
+  <style> .flex-container.ex2 {display: inline-flex;}</style>
+  <div class="flex-container ex2">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+    <div class="box10">10</div>
+  </div>
+
+</body>
+</html>

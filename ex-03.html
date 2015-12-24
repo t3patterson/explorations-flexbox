@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .flex-container{
+      outline: 7px solid palegoldenrod;
+      margin-bottom: 150px;
+      min-height: 20vh;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Ex-03: <code>flex-wrap: «wrap-val»</code></h1>
+  <pre id="html-code">
+  <h3>HTML</h3>
+  <code>
+  &lt;div&gt; class="flex-container"&lt;/div&gt;
+    &lt;div&gt; class="box box1">1 &lt;/div&gt;
+    &lt;div&gt; class="box box2">2 &lt;/div&gt;
+    &lt;div&gt; class="box box3">3 &lt;/div&gt;
+    &lt;div&gt; class="box box4">4 &lt;/div&gt;
+    &lt;div&gt; class="box box5">5 &lt;/div&gt;
+    &lt;div&gt; class="box box6">6 &lt;/div&gt;
+    &lt;div&gt; class="box box7">7 &lt;/div&gt;
+    &lt;div&gt; class="box box8">8 &lt;/div&gt;
+    &lt;div&gt; class="box box9">9 &lt;/div&gt;
+    &lt;div&gt; class="box box10">10 &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+  </pre>
+
+  <hr>
+  
+  <!-- ................... -->
+  <!-- flex-wrap: nowwrap -->
+  <!-- ................... -->
+  <h3>flex-wrap: no-wrap</h3>
+  <small>( with child-box -- width: 300 )</small>
+  <p>Default will not wrap the elements <em>(i.e. push them to next line)</em></p>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: nowrap
+    }
+
+    .box {
+      width: 300px;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex1 { 
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .ex1 .box {
+      width: 300px;
+    }
+
+  </style>
+
+  <div class="flex-container ex1">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+
+  
+  <!-- ................... -->
+  <!-- flex-wrap: wrap -->
+  <!-- ................... -->
+  <h3>flex-wrap: wrap</h3>
+  <p>Flexbox  wraps the elements <em>(i.e. pushes overage to next line)</em></p>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: wrap
+    }
+
+    .box {
+      width: 300px;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex2 { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ex2 .box {
+      width: 300px;
+    }
+
+  </style>
+
+  <div class="flex-container ex2">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  
+
+  <!-- ................... -->
+  <!-- flex-wrap: wrap + height -->
+  <!-- ................... -->
+  <h3>flex-wrap + height</h3>
+  <p>box-children will expand to fill out the height of the flex-container</p>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: wrap;
+      height: 600px;  
+    }
+
+    .box {
+      width: 300px;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex3 { 
+      display: flex;
+      flex-wrap: wrap;
+      height: 600px;
+    }
+
+    .ex3 .box {
+      width: 300px;
+    }
+
+  </style>
+
+  <div class="flex-container ex3">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+
+  <!-- ................... -->
+  <!-- flex-wrap: wrap-reverse -->
+  <!-- ................... -->
+  <h3>flex-wrap: wrap-reverse + height</h3>
+  <p>if height is specified on flex-container, box-children will expand to fill out the given height <small>(otherwise it will default to the height of the elements)</small> </p>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 300px;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex4 { 
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+
+    .ex4 .box {
+      width: 300px;
+    }
+
+  </style>
+
+  <div class="flex-container ex4">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  
+  
+  <!-- ................... -->
+  <!--     % widths        -->
+  <!-- ................... -->
+  <h3>% width</h3>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 33.3333%;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex5 { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ex5 .box {
+      width: 33.3333%;
+    }
+
+  </style>
+
+  <div class="flex-container ex5">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+
+  <!-- ................... -->
+  <!--     % widths + margin  -->
+  <!-- ................... -->
+  <h3>% width + margin</h3>
+  <p>Note: use <strong>percent</strong> margin</p>
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 33.333333%;
+      padding: 1%;
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex6 { 
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ex6 .box {
+      width: 31.3333%;
+      margin: 1%;
+    }
+
+  </style>
+
+  <div class="flex-container ex6">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+
+
+</body>
+</html>
