@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .flex-container{
+      outline: 7px solid palegoldenrod;
+      margin-bottom: 150px;
+      min-height: 20vh;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Ex-03: <code>flex-wrap: «wrap-val»</code></h1>
+  <pre id="html-code">
+  <h3>HTML</h3>
+  <code>
+  &lt;div&gt; class="flex-container"&lt;/div&gt;
+    &lt;div&gt; class="box box1">1 &lt;/div&gt;
+    &lt;div&gt; class="box box2">2 &lt;/div&gt;
+    &lt;div&gt; class="box box3">3 &lt;/div&gt;
+    &lt;div&gt; class="box box4">4 &lt;/div&gt;
+    &lt;div&gt; class="box box5">5 &lt;/div&gt;
+    &lt;div&gt; class="box box6">6 &lt;/div&gt;
+    &lt;div&gt; class="box box7">7 &lt;/div&gt;
+    &lt;div&gt; class="box box8">8 &lt;/div&gt;
+    &lt;div&gt; class="box box9">9 &lt;/div&gt;
+    &lt;div&gt; class="box box10">10 &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+  </pre>
+
+  <hr>
+  
+  <!-- ................... -->
+  <!--    « generic »      -->
+  <!-- ................... -->
+  <h3>flex-wrap: no-wrap</h3>
+  <small>( with child-box -- width: 300 )</small>
+  <p>Default will not wrap the elements <em>(i.e. push them to next line)</em></p>
+  
+  <pre>
+    <code>
+    .flex-container { 
+      display: flex;
+    }
+
+    .box {
+      flex: 1 
+    }
+    </code>
+  </pre>
+
+  <style>
+   .flex-container.ex1 { 
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .ex1 .box {
+      width: 300px;
+    }
+
+  </style>
+
+  <div class="flex-container ex1">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+
+
+</body>
+</html>
